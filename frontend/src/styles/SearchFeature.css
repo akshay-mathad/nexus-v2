@@ -1,0 +1,119 @@
+.search-feature {
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 5%;
+  background-color: var(--beige-color);
+}
+
+.search-feature h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--dark-brown-color);
+}
+
+.search-feature form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5%;
+}
+
+.search-feature label {
+  width: 100%;
+  margin-bottom: 10px;
+  color: var(--dark-brown-color);
+}
+
+.search-feature input {
+  margin-top: 2%; 
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--light-gray-color);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.search-feature .buttons {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 20px;
+  gap: 10px;
+  width: 20%; /* Full width for buttons */
+}
+
+.search-feature button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--dark-brown-color);
+  color: var(--khaki-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.search-feature button:hover {
+  background-color: var(--light-gray-color);
+}
+
+.search-feature button[type="reset"] {
+  background-color: var(--palette2-accent-color);
+}
+
+.search-feature button[type="reset"]:hover {
+  background-color: var(--palette2-background-color);
+}
+
+/* Styles for the search results section */
+.search-results {
+  margin-top: 20px; /* Space above results */
+  padding: 10px;
+  background-color: var(--light-brown-color); /* Background color for results */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.search-results h2 {
+  margin-bottom: 10px; /* Space below the title */
+  color: var(--dark-brown-color); /* Title color */
+  text-align: center; /* Center the title */
+}
+
+.search-results ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+}
+
+.search-results li {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Space out content */
+  align-items: center; /* Center items vertically */
+  padding: 15px; /* Padding for each result */
+  border-bottom: 1px solid var(--light-gray-color); /* Separator line */
+  color: var(--dark-brown-color); /* Text color */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.search-results li:hover {
+  background-color: var(--palette1-highlight-color); /* Highlight on hover */
+}
+
+.search-results li:last-child {
+  border-bottom: none; /* Remove border from the last item */
+}
+
+.search-results button {
+    width: 20%;
+  padding: 8px 12px; /* Padding for the book button */
+  border: none;
+  border-radius: 5px;
+  background-color: var(--palette2-accent-color); /* Button color */
+  color: var(--dark-brown-color); /* Text color */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.search-results button:hover {
+  background-color: var(--palette2-background-color); /* Lighter color on hover */
+}

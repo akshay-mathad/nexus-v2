@@ -1,0 +1,11 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: var(--dark-brown-color);
+  color: var(--khaki-color);
+  font-size: var(--font-size-small);
+  z-index: 1000;
+}
+

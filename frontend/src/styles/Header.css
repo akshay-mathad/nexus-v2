@@ -1,0 +1,101 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: var(--beige-color);
+    color: var(--light-gray-color);
+    border-bottom: 1px solid var(--dark-brown-color);
+    z-index: 1000;
+    position: relative;
+}
+
+.logo {
+    font-size: 40px; /* Doubled the font size for a much bigger appearance */
+    font-weight: bold;
+    color: var(--dark-brown-color);
+}
+
+.hamburger {
+    display: none; /* Hidden by default */
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-menu button {
+    background-color: var(--dark-brown-color);
+    color: var(--khaki-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease 0s, color 0.5s ease 0s; /* Enhanced animation for smoother hover effect */
+}
+
+.nav-menu button:hover {
+    background-color: var(--khaki-color);
+    color: var(--dark-brown-color);
+}
+
+.nav-menu.active {
+    display: flex; /* Show menu when active */
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;/* Show hamburger icon on small screens */
+    }
+
+    .nav-menu {
+        display: none; /* Hide menu by default on small screens */
+        flex-direction: column; /* Stack buttons vertically */
+        position: absolute;
+        top: 60px; /* Position below the header */
+        right: 0;
+        background-color: var(--beige-color);
+        /* width: 100%; */
+        margin: 10px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 10px; /* Add padding for better spacing */
+        gap: 0px;
+        border-radius: 2%;
+    }
+
+    .nav-menu.active {
+        display: flex; /* Show menu when active */
+    }
+
+    .nav-menu button {
+        width: auto; /* Make buttons take full width */
+        text-align: center; /* Align text to the left */
+        padding: 10px 20px; /* Add padding for better spacing */
+        border-radius: 0%;
+    }
+}
+
+.app-name {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--dark-brown-color);
+    text-align: center;
+}
+
+.Logout, .LogIn, .Profile, .Bookings, .Appointment {
+    background-color: var(--dark-brown-color);
+    color: var(--khaki-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.Logout:hover, .LogIn:hover, .Profile:hover, .Bookings:hover, .Appointment:hover {
+    background-color: var(--khaki-color);
+    color: var(--dark-brown-color);
+}

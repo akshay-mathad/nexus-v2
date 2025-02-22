@@ -1,0 +1,223 @@
+:root {
+  /* Color Palette 1 */
+  --palette1-primary-color: #FFB085; /* Beige */
+  --palette1-secondary-color: #E88463; /* Light Brown */
+  --palette1-accent-color: #BD6650; /* Rosewood */
+  --palette1-background-color: #FFF8E3; /* Khaki */
+  --palette1-text-color: #362828; /* Dark Brown */
+  --palette1-highlight-color: #FFDDBB; /* Light Gray */
+  --palette1-shadow-color: rgba(0, 0, 0, 0.1); /* Shadow */
+
+  /* Color Palette 2 */
+  --palette2-primary-color: #8B9467; /* Muted Green */
+  --palette2-secondary-color: #455A64; /* Deep Blue */
+  --palette2-accent-color: #F7DC6F; /* Bright Yellow */
+  --palette2-background-color: #E5E5EA; /* Light Gray */
+  --palette2-text-color: #333333; /* Dark Gray */
+  --palette2-highlight-color: #C5CAE9; /* Pastel Blue */
+  --palette2-shadow-color: rgba(0, 0, 0, 0.2); /* Shadow */
+}
+
+
+
+.landing-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--beige-color);
+  color: var(--dark-brown-color);
+  font-family: 'Arial', sans-serif;
+}
+
+.home-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: auto;
+  background-color: var(--light-brown-color);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap; /* Added for responsiveness */
+}
+
+.home-intro-text {
+  flex: 1;
+  padding: 50px; /* Reduced padding for better small screen experience */
+  order: 2; /* Adjusted for mobile layout */
+}
+
+.home-intro-text-title {
+  font-size: 36px; /* Reduced font size for better small screen experience */
+  font-weight: bold;
+  font-size: 3rem; /* Adjusted for responsiveness */
+}
+
+.home-intro-text-description {
+  margin-top: 10px; /* Reduced margin for better small screen experience */
+  font-size: 18px; /* Reduced font size for better small screen experience */
+  font-size: 1.125rem; /* Adjusted for responsiveness */
+}
+
+.home-intro-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px; /* Reduced margin for better small screen experience */
+  overflow: hidden;
+  order: 1; /* Adjusted for mobile layout */
+}
+
+.home-intro-image img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.home-intro-text-buttons {
+  display: flex;
+  gap: 10%; /* Increased gap for better small screen experience */
+  flex-direction: column; /* Adjusted for mobile layout */
+}
+
+.search-button,
+.get-started-button {
+  margin-top: 10px; /* Reduced margin for better small screen experience */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--dark-brown-color);
+  color: var(--khaki-color);
+  font-size: 16px; /* Reduced font size for better small screen experience */
+  font-size: 1rem; /* Adjusted for responsiveness */
+}
+.search-button:hover,
+.get-started-button:hover {
+  background-color: var(--light-gray-color);
+  color: var(--khaki-color);
+}
+
+@media (max-width: 768px) {
+  .home-intro {
+    flex-direction: column; /* Adjusted for mobile layout */
+  }
+
+  .home-intro-text {
+    padding: 20px; /* Reduced padding for better small screen experience */
+  }
+
+  .home-intro-text-title {
+    font-size: 2rem; /* Reduced font size for better small screen experience */
+  }
+
+  .home-intro-text-description {
+    font-size: 0.875rem; /* Reduced font size for better small screen experience */
+  }
+
+  .home-intro-image {
+    margin: 10px; /* Reduced margin for better small screen experience */
+  }
+
+  .home-intro-text-buttons {
+    gap: 15%; /* Increased gap for better small screen experience */
+  }
+
+  .search-button,
+  .get-started-button {
+    font-size: 0.875rem; /* Reduced font size for better small screen experience */
+  }
+}
+
+
+.home-how-to-book {
+  padding: 2rem;
+  background-color: var(--beige-color);
+}
+
+.home-how-to-book-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center; /* Center the title */
+}
+
+.how-to-book-description {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center; /* Center the description */
+}
+
+.how-to-book-steps {
+  display: flex;
+  flex-direction: row; /* Stack steps vertically */
+  justify-content: space-between;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--light-brown-color);
+  border-radius: 8px;
+  padding: 1rem;
+  width: 20%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; /* Smooth hover effect */
+  text-align: center;
+}
+
+.step:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.step-icon {
+  width: 40px; /* Set a fixed size for icons */
+  height: 40px;
+  margin-right: 1rem; /* Space between icon and text */
+  color: var(--dark-brown-color); /* Icon color */
+}
+
+.step-number {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--dark-brown-color);
+  margin-right: 1rem; /* Space between number and description */
+}
+
+.step-description {
+  font-size: 1rem;
+  color: var(--dark-brown-color);
+}
+
+@media (max-width: 768px) {
+  .home-how-to-book {
+    padding: 0.625rem;
+  }
+
+  .home-how-to-book-title {
+    font-size: 1.125rem;
+  }
+
+  .how-to-book-description {
+    font-size: 0.875rem;
+  }
+
+  .step {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .step-number {
+    font-size: 1.125rem;
+  }
+
+  .step-description {
+    font-size: 0.875rem;
+  }
+}
+

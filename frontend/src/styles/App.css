@@ -1,0 +1,24 @@
+:root {
+    --khaki-color: #908C67;
+    --dark-brown-color: #362828;
+    --rosewood-color: #7A4D47;
+    --light-brown-color: #A67C6A;
+    --beige-color: #DDCCAE;
+    --light-gray-color: #DFDAD4;
+
+
+    --font-size-small: 12px;
+    --font-size-medium: 16px;
+    --font-size-large: 20px;
+    --font-size-xlarge: 24px;
+    --font-size-xxlarge: 32px;
+    --font-size-xxxlarge: 40px;
+    --font-size-xxxxlarge: 48px;
+
+    --rosewood-color: #BD6650;
+    --light-brown-color: #E88463;
+    --beige-color: #FFB085;
+    --light-gray-color: #FFDDBB;
+    --khaki-color: #FFF8E3;
+    --beige-color: #FFEBCF;
+}
