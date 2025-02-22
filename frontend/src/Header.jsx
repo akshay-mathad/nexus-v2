@@ -18,7 +18,7 @@ const Header = () => {
 
     return (
         <div className="header">
-            <div className="logo">Nexus</div>
+            <div className="logo afacad-font">Nexus</div>
             <div className="hamburger" onClick={toggleMenu}>
                 &#9776; {/* Hamburger icon */}
             </div>

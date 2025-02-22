@@ -22,8 +22,8 @@ const LandingPage = () => {
       <div className="landing-page">
         <div className="home-intro">
           <div className="home-intro-text">
-            <div className="home-intro-text-title">Welcome to Nexus</div>
-            <div className="home-intro-text-description">
+            <div className="home-intro-text-title afacad-font">Welcome to Nexus</div>
+            <div className="home-intro-text-description playfair-display-font">
               Experience the ultimate convenience with our comprehensive
               platform, designed to cater to all your requirements
             </div>

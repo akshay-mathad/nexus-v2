@@ -11,7 +11,7 @@
 }
 
 .logo {
-    font-size: 40px; /* Doubled the font size for a much bigger appearance */
+    font-size: 48px; /* Doubled the font size for a much bigger appearance */
     font-weight: bold;
     color: var(--dark-brown-color);
 }
