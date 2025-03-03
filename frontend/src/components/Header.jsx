@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../styles/Header.css'; // Adjust the path accordingly
+import './styles/Header.css'; // Adjust the path accordingly
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);

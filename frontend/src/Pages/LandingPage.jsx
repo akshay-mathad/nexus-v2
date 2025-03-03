@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { useNavigate } from "react-router-dom";
-import "../styles/LandingPage.css";
+import "./styles/LandingPage.css";
 import bgImage from "../images/image-2-Joel-Filipe.jpg";
 import SearchFeature from "../components/SearchFeature";
 

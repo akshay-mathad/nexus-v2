@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import "../styles/SearchFeature.css";
+import { useNavigate } from "react-router-dom";
+import "./styles/SearchFeature.css";
 
 const SearchFeature = () => {
+  const navigate = useNavigate();
   const [searchResults, setSearchResults] = useState([]);
   const [artisanSearch, setArtisanSearch] = useState("");
   const [locationSearch, setLocationSearch] = useState("");
@@ -14,19 +16,19 @@ const SearchFeature = () => {
     );
     // Simulate search logic by filtering a predefined list of artisans
     const artisans = [
-      { name: "John Doe", location: "New York", category: "Carpenter" },
-      { name: "Jane Smith", location: "Los Angeles", category: "Electrician" },
-      { name: "Bob Johnson", location: "Chicago", category: "Plumber" },
-      { name: "Alice Brown", location: "New York", category: "Painter" },
-      { name: "Mike Davis", location: "Houston", category: "Carpenter" },
-      { name: "Emily Taylor", location: "San Francisco", category: "Interior Designer" },
-      { name: "David Lee", location: "Miami", category: "Landscaper" },
-      { name: "Sarah Johnson", location: "Dallas", category: "HVAC Technician" },
-      { name: "Kevin White", location: "Phoenix", category: "Roofing Specialist" },
-      { name: "Lisa Nguyen", location: "Seattle", category: "General Contractor" },
-      { name: "Olivia Martin", location: "New York", category: "Architect" },
-      { name: "Ethan Hall", location: "New York", category: "Flooring Specialist" },
-      { name: "Ava Chen", location: "New York", category: "Cabinetmaker" },
+      { id: 1, name: "John Doe", location: "New York", category: "Carpenter" },
+      { id: 2, name: "Jane Smith", location: "Los Angeles", category: "Electrician" },
+      { id: 3, name: "Bob Johnson", location: "Chicago", category: "Plumber" },
+      { id: 4, name: "Alice Brown", location: "New York", category: "Painter" },
+      { id: 5, name: "Mike Davis", location: "Houston", category: "Carpenter" },
+      { id: 6, name: "Emily Taylor", location: "San Francisco", category: "Interior Designer" },
+      { id: 7, name: "David Lee", location: "Miami", category: "Landscaper" },
+      { id: 8, name: "Sarah Johnson", location: "Dallas", category: "HVAC Technician" },
+      { id: 9, name: "Kevin White", location: "Phoenix", category: "Roofing Specialist" },
+      { id: 10, name: "Lisa Nguyen", location: "Seattle", category: "General Contractor" },
+      { id: 11, name: "Olivia Martin", location: "New York", category: "Architect" },
+      { id: 12, name: "Ethan Hall", location: "New York", category: "Flooring Specialist" },
+      { id: 13, name: "Ava Chen", location: "New York", category: "Cabinetmaker" },
     ];
     const filteredArtisans = artisans.filter(
       (artisan) =>
@@ -88,10 +90,10 @@ const SearchFeature = () => {
           <>
             <h2>Search Results</h2>
             <ul>
-              {searchResults.map((artisan, index) => (
-                <li key={index}>
+              {searchResults.map((artisan) => (
+                <li key={artisan.id}>
                   {artisan.name} - {artisan.location} - {artisan.category}
-                  <button>Book</button>
+                  <button onClick={() => navigate(`/book-artisan/${artisan.id}`)}>Book</button>
                 </li>
               ))}
             </ul>

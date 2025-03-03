@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Header.css';
 
@@ -18,7 +18,9 @@ const Header = () => {
 
     return (
         <div className="header">
-            <div className="logo afacad-font">Nexus</div>
+            <div className="logo afacad-font" onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>
+                Nexus
+            </div>
             <div className="hamburger" onClick={toggleMenu}>
                 &#9776; {/* Hamburger icon */}
             </div>
